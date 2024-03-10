@@ -1,10 +1,10 @@
-h1 = document.querySelector("h1")
+// h1 = document.querySelector("h1")
 
-h1.style.color = "red"
-h1.style.fontSize = "80px"
-h1.style.fontWeight = "bold"
-h1.style.textAlign = "center"
-h1.style.fontFamily = "Arial"
+// h1.style.color = "red"
+// h1.style.fontSize = "80px"
+// h1.style.fontWeight = "bold"
+// h1.style.textAlign = "center"
+// h1.style.fontFamily = "Arial"
 
 // window.alert(10 + 20)
 // window.alert("10 + 20")
@@ -54,5 +54,57 @@ h1.style.fontFamily = "Arial"
 // console.log(typeof false)   //boolean
 // console.log(typeof undefined)   //undefined
 // console.log(typeof null)    //object
+
+
+// let a = 'We Love'
+// let b = 'Javascript'
+// let c = 'and'
+// let d = 'Python'
+
+// console.log(a + ' ' + b + " " + c + " " + a + " " + d)
+// console.log(`${a} ${b} ${c} ${a} ${d}`)
+// console.log(a + ' ' + b + " " + c + "\n" + a + " " + d)
+// console.log(`${a} "" '' / \\ ${b} ${c}\n${a} ${d}`)
+
+// console.log(1_000_000)
+// let number = "1e6"
+// console.log(1e6)
+// console.log(+number)
+// console.log(10 ** 6)
+
+// console.log(Number.MAX_SAFE_INTEGER)
+// console.log(Number.MIN_SAFE_INTEGER)
+// console.log(Number.MAX_VALUE)
+// console.log(Number.MIN_VALUE)
+
+// console.log(20..toString())
+// console.log(100.55455.toFixed(2))
+// console.log(Number("100 Osama"))
+// console.log(+"100 Osama")
+// console.log(parseInt("Osama 100.500 Osama"))
+// console.log(parseInt("100.500 Osama"))
+// console.log(parseFloat("100.500 Osama"))
+
+// console.log(Number.isInteger("100"))
+// console.log(Number.isInteger(100))
+// console.log(Number.isInteger(100.500))
+// console.log(Number.isInteger("Osama"))
+// console.log(Number.isNaN("Osama"))
+// console.log(Number.isNaN("Osama" / 2))
+
+// let j = "Osama" * 2
+// console.log(Number.isNaN(j))
+// let k = "Osama"
+// console.log(Number.isNaN(k))
+
+// console.log(Math.round(1.5))
+// console.log(Math.floor(1.5))
+// console.log(Math.ceil(1.5))
+// console.log(2 ** 2)
+// console.log(Math.pow(2,2))
+// console.log(parseInt(Math.random() * 100)) #Random Number Between 1 and 100
+
+document.getElementById('title').innerHTML = "relod to get a new number"
+document.getElementById("number").innerHTML = (parseInt(Math.random() * 100))
 
 
