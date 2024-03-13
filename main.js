@@ -103,8 +103,115 @@
 // console.log(2 ** 2)
 // console.log(Math.pow(2,2))
 // console.log(parseInt(Math.random() * 100)) #Random Number Between 1 and 100
+// console.log(parseInt(Math.random([]) * 100))
+// console.log(Math.trunc(Math.random([]) * 100))
 
-document.getElementById('title').innerHTML = "relod to get a new number"
-document.getElementById("number").innerHTML = (parseInt(Math.random() * 100))
+// document.getElementById('title').innerHTML = "relod to get a new number"
+// document.getElementById("number").innerHTML = (parseInt(Math.random() * 100))
+
+// document.getElementById('title').innerHTML = "relod to get a new number"
+// document.getElementById("number").innerHTML = (Math.trunc(Math.random([13]) * 100))
 
 
+// let TheName = "  Ahmed  "
+
+// console.log(TheName[1])
+// console.log(TheName[5])
+// console.log(TheName.charAt(1))
+// console.log(TheName.charAt(5))
+// console.log(TheName.length)
+// console.log(TheName.trim())
+// console.log(TheName.toUpperCase())
+// console.log(TheName.toLowerCase())
+
+// let a = "Elzero Web School"
+// console.log(a.indexOf("o", 1))
+// console.log(a.lastIndexOf("o"))
+
+// console.log(a.slice(1, 5))
+// console.log(a.slice(-10, -9))
+
+// console.log(a.split("", 6))
+
+// a = "Elzero Web School"
+// // subString == start then end
+// console.log(a.substring(2, 6))
+// console.log(a.substring(6, 2))
+// console.log(a.substring(-10, 6))
+// // substr == start then how-many
+// console.log(a.substr(1, 2))
+// // start >= a.length == nothing
+// console.log(a.substr(a.length ))
+// console.log(a.substr(-3))
+// console.log(a.substr(-5, 2))
+
+// console.log(a.includes("Web"))
+// console.log(a.includes("Web", 8))
+
+// console.log(a.startsWith('E'))
+// console.log(a.startsWith('E', 1))
+
+// a.endWith() search for it and it work with length
+
+// // == Compare Between Values Only
+// console.log(10 == "10")
+// // === Identical Mean Compare Between Values and Types
+// console.log(10 === 10)
+// console.log(10 === "10")
+// or then and 
+
+/*
+Logical Or ||
+    Null or Undefined or Any Falsy Value
+Nullish Coalescing Operator ??
+    Null or Undefined
+*/
+// let price
+// console.log(`The Price Is ${price || "Free"}`)
+// console.log(`The Price Is ${price ?? "Free"}`)
+
+
+/*
+  If Condition Challenge
+*/
+
+let a = 10;
+
+if (a < 10) {
+    console.log(10);
+} else if (a >= 10 && a <= 40) {
+    console.log("10 To 40");
+} else if (a > 40) {
+    console.log("> 40");
+} else {
+    console.log("Unknown");
+}
+
+`
+${a < 10 ? console.log(10)
+    : a >= 10 && a <= 40 ? console.log("10 to 40")
+        : a > 40 ? console.log("> 40")
+            : console.log("Unknown")}
+`
+
+// Write Previous Condition With Ternary If Syntax
+
+let st = "Elzero Web School";
+
+
+// W Position May Change
+if (st[st.indexOf("W")].toLowerCase() === "w") {
+    console.log("Good");
+}
+
+if ((typeof st.length).toString() !== "string") {
+    console.log("Good");
+}
+
+if ((typeof st.length).toString() === "number") {
+    console.log("Good");
+}
+
+if (st.split(" ", 1).toString().repeat(2) === "ElzeroElzero") {
+    console.log("Good");
+}
