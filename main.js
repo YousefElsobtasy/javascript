@@ -171,47 +171,47 @@ Nullish Coalescing Operator ??
 // console.log(`The Price Is ${price ?? "Free"}`)
 
 
-/*
-  If Condition Challenge
-*/
 
-let a = 10;
 
-if (a < 10) {
-    console.log(10);
-} else if (a >= 10 && a <= 40) {
-    console.log("10 To 40");
-} else if (a > 40) {
-    console.log("> 40");
-} else {
-    console.log("Unknown");
+let day = "   saturday   ";
+// You Need To Remove Spaces And Make First Letter Capital => Friday
+let d = `${day.trim().charAt(0).toUpperCase()}${day.trim().substr(1, day.length - 1)}`
+ console.log(d)
+switch (d){
+    default :
+    console.log("Its Not A Valid Day")
+    break
+    case "Friday" :
+    case "Saturday" :
+    case "Sunday" :
+        console.log("No Appointments Available")
+        break
+    case "Monday" :
+    case "Thursday" :
+        console.log("From 10:00 AM To 5:00 PM")
+        break
+    case "Tuesday" :
+        console.log("From 10:00 AM To 6:00 PM")
+        break
+    case "Wednesday" :
+        console.log("From 10:00 AM To 7:00 PM")
+        break
 }
 
-`
-${a < 10 ? console.log(10)
-    : a >= 10 && a <= 40 ? console.log("10 to 40")
-        : a > 40 ? console.log("> 40")
-            : console.log("Unknown")}
-`
+// let day = "Friday";
+// let day = "Saturday";
+// let day = "Sunday";
+// // Output => "No Appointments Available"
 
-// Write Previous Condition With Ternary If Syntax
+// let day = "Monday";
+// let day = "Thursday";
+// // Output => "From 10:00 AM To 5:00 PM"
 
-let st = "Elzero Web School";
+// let day = "Tuesday";
+// // Output => "From 10:00 AM To 6:00 PM"
 
+// let day = "Wednesday";
+// // Output => "From 10:00 AM To 7:00 PM"
 
-// W Position May Change
-if (st[st.indexOf("W")].toLowerCase() === "w") {
-    console.log("Good");
-}
-
-if ((typeof st.length).toString() !== "string") {
-    console.log("Good");
-}
-
-if ((typeof st.length).toString() === "number") {
-    console.log("Good");
-}
-
-if (st.split(" ", 1).toString().repeat(2) === "ElzeroElzero") {
-    console.log("Good");
-}
+// let day = "World";
+// // Output => "Its Not A Valid Day"
