@@ -158,7 +158,8 @@
 // // === Identical Mean Compare Between Values and Types
 // console.log(10 === 10)
 // console.log(10 === "10")
-// or then and 
+
+// or then and
 
 /*
 Logical Or ||
@@ -170,48 +171,22 @@ Nullish Coalescing Operator ??
 // console.log(`The Price Is ${price || "Free"}`)
 // console.log(`The Price Is ${price ?? "Free"}`)
 
+/*
+  Arrays Methods [Adding And Removing]
+  - unshift("", "") Add Element To The First and make change to array
+  - push("", "") Add Element To The End and make change to array
+  - shift() Remove First Element From Array and make change to array
+  - pop() Remove Last Element From Array and make change to array
+  - sort()
+  - reverse() make change to array
+  - slice()
+  - splice(0, 0, "add") make change to array
+  - concat() Usefull for Arrays
+  - join(what between) From Arrays to String
+
+*/
 
 
 
-let day = "   saturday   ";
-// You Need To Remove Spaces And Make First Letter Capital => Friday
-let d = `${day.trim().charAt(0).toUpperCase()}${day.trim().substr(1, day.length - 1)}`
- console.log(d)
-switch (d){
-    default :
-    console.log("Its Not A Valid Day")
-    break
-    case "Friday" :
-    case "Saturday" :
-    case "Sunday" :
-        console.log("No Appointments Available")
-        break
-    case "Monday" :
-    case "Thursday" :
-        console.log("From 10:00 AM To 5:00 PM")
-        break
-    case "Tuesday" :
-        console.log("From 10:00 AM To 6:00 PM")
-        break
-    case "Wednesday" :
-        console.log("From 10:00 AM To 7:00 PM")
-        break
-}
 
-// let day = "Friday";
-// let day = "Saturday";
-// let day = "Sunday";
-// // Output => "No Appointments Available"
 
-// let day = "Monday";
-// let day = "Thursday";
-// // Output => "From 10:00 AM To 5:00 PM"
-
-// let day = "Tuesday";
-// // Output => "From 10:00 AM To 6:00 PM"
-
-// let day = "Wednesday";
-// // Output => "From 10:00 AM To 7:00 PM"
-
-// let day = "World";
-// // Output => "Its Not A Valid Day"
