@@ -183,10 +183,62 @@ Nullish Coalescing Operator ??
   - splice(0, 0, "add") make change to array
   - concat() Usefull for Arrays
   - join(what between) From Arrays to String
-
 */
 
 
+/*
+  Function - Random Argument Challenge
+  ====================================
+  Create Function showDetails
+  Function Accept 3 Parameters [a, b, c]
+  Data Types For Info Is
+  - String => Name
+  - Number => Age
+  - Boolean => Status
+  Argument Is Random
+  Data Is Not Sorted Output Depend On Data Types
+  - Use Ternary Conditional Operator
+*/
+
+// Search For Arrow Function Syntax 
 
 
 
+
+
+
+
+
+
+
+
+/*
+  Function Arrow Challenges
+*/
+
+// [1] One Statement In Function
+// [2] Convert To Arrow Function
+// [3] Print The Output [Arguments May Change]
+
+// Answer :
+
+// let names = function (...names) {
+//   // Parameter ?
+//   return `String [${names.join("], [")}] => Done !`;
+// };
+
+// let names = (...names) => { return `String [${names.join("], [")}] => Done !` }
+// console.log(names("Osama", "Mohamed", "Ali", "Ibrahim"));
+// String [Osama], [Mohamed], [Ali], [Ibrahim] => Done !
+
+/* ================================= */
+
+// [1] Replace ??? In Return Statement To Get The Output
+// [2] Create The Same Function With Regular Syntax
+// [3] Use Array Inside The Arguments To Get The Output
+
+let myNumbers = [20, 50, 10, 60];
+
+let calc = (one, two, ...nums) => { return one + two + nums.shift() };
+
+console.log(calc(10, myNumbers.shift(), myNumbers.shift())); // 80
